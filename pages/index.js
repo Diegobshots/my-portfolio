@@ -27,6 +27,8 @@ export default function Home() {
 
   const [darkMode, setDarkMode] = useState(true)
 
+  const [animateTheme, setAnimateTheme] = useState(false)
+
   return (
     <div className={`${darkMode ? 'dark' : ''} font-source`}  >
       <Head>
@@ -43,14 +45,14 @@ export default function Home() {
               <li>
                 {
                   !darkMode ?
-                    <BsCloudMoon onClick={() => setDarkMode(!darkMode)} className="dark:text-white cursor-pointer text-2xl" />
+                    <BsCloudMoon onClick={() => setDarkMode(!darkMode)} className={`dark:text-white cursor-pointer text-2xl `} />
                     :
-                    <BsSun onClick={() => setDarkMode(!darkMode)} className="dark:text-white cursor-pointer text-2xl" />
+                    <BsSun onClick={() => setDarkMode(!darkMode)} className={`dark:text-white cursor-pointer text-2xl `} />
                 }
               </li>
               <li>
                 <a
-                  className="hover:scale-110 bg-red text-white text-firstLight px-4 py-2 rounded-md ml-8"
+                  className="hover:scale-110 bg-red text-white  px-4 py-2 rounded-md ml-8 text-sm md:text-lg"
                   href="mailto:blancolopez94@gmail.com"
                 >
                   Get in touch 👈
@@ -84,7 +86,7 @@ export default function Home() {
             <h3 className="dark:text-white text-4xl py-1">Projects</h3>
             <p className="text-lg py-2 leading-8 text-midWhite  dark:text-gray-400">
               Here, you can see my projects. Some of them were developed in a professional environment, and due to protected rights, I am unable to showcase or link to their repositories. Nevertheless, I can explain how I developed them and the technologies I used. However, others were developed by me and are completely open-source and public            </p>
-            
+
           </div>
           <div className="lg:flex gap-10">
             <div >
@@ -98,9 +100,9 @@ export default function Home() {
                 <h4 className=" py-3 text-red text-lg">Technologies I used</h4>
                 <p className="dark:text-midWhite text-gray-800 py-1">React</p>
                 <p className="dark:text-midWhite text-gray-800 py-1">Material UI</p>
-                <Link href='https://delightful-druid-1164d7.netlify.app/' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 w-full mb-2 flex justify-center items-center mt-4">View deploy<SiNetlify className="ml-2"/></button></Link>
-                <Link href='https://github.com/Diegobshots/todo-app/tree/master' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 flex justify-center items-center w-full">View repo<AiFillGithub className="ml-2"/></button></Link>
-                
+                <Link href='https://delightful-druid-1164d7.netlify.app/' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 w-full mb-2 flex justify-center items-center mt-4">View deploy<SiNetlify className="ml-2" /></button></Link>
+                <Link href='https://github.com/Diegobshots/todo-app/tree/master' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 flex justify-center items-center w-full">View repo<AiFillGithub className="ml-2" /></button></Link>
+
               </div>
             </div>
             <div >
@@ -113,9 +115,9 @@ export default function Home() {
                 </p>
                 <h4 className=" py-3 text-red text-lg">Technologies I used</h4>
                 <p className="dark:text-midWhite text-gray-800 py-1">React</p>
-                <Link href='https://delightful-druid-1164d7.netlify.app/' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 w-full mb-2 flex justify-center items-center mt-4">View deploy<SiNetlify className="ml-2"/></button></Link>
-                <Link href='https://github.com/Diegobshots/todo-app/tree/master' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 flex justify-center items-center w-full">View repo<AiFillGithub className="ml-2"/></button></Link>
-                
+                <Link href='https://quiet-toffee-38a699.netlify.app/' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 w-full mb-2 flex justify-center items-center mt-4">View deploy<SiNetlify className="ml-2" /></button></Link>
+                <Link href='https://github.com/Diegobshots/kitten-facts' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 flex justify-center items-center w-full">View repo<AiFillGithub className="ml-2" /></button></Link>
+
               </div>
             </div>
             <div >
@@ -131,7 +133,7 @@ export default function Home() {
                 <p className="dark:text-midWhite text-gray-800 py-1">Express</p>
                 <p className="dark:text-midWhite text-gray-800 py-1">JWT</p>
                 <p className="dark:text-midWhite text-gray-800 py-1">ldap-authentication package</p>
-                
+
               </div>
             </div>
             <div >
@@ -146,16 +148,16 @@ export default function Home() {
                 <p className="dark:text-midWhite text-gray-800 py-1">React</p>
                 <p className="dark:text-midWhite text-gray-800 py-1">Tailwindcss</p>
                 <p className="dark:text-midWhite text-gray-800 py-1">Vite</p>
-              
-                <Link href='https://unique-begonia-553e1e.netlify.app/' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 w-full mb-2 flex justify-center items-center mt-4">View deploy<SiNetlify className="ml-2"/></button></Link>
-                <Link href='https://github.com/Diegobshots/react-shop' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 flex justify-center items-center w-full">View repo<AiFillGithub className="ml-2"/></button></Link>
-                
+
+                <Link href='https://unique-begonia-553e1e.netlify.app/' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 w-full mb-2 flex justify-center items-center mt-4">View deploy<SiNetlify className="ml-2" /></button></Link>
+                <Link href='https://github.com/Diegobshots/react-shop' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 flex justify-center items-center w-full">View repo<AiFillGithub className="ml-2" /></button></Link>
+
               </div>
             </div>
           </div>
 
         </section>
-        
+
       </main>
     </div>
   )
