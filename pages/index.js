@@ -75,7 +75,7 @@ export default function Home() {
                 <Link target='_blank' href='https://www.github.com/diegobshots/'><AiFillGithub className="hover:text-red cursor-pointer" /></Link>
               </div>
             </div>
-            <div className="relative bg-gradient-to-t from-red to-orange rounded-full w-60 h-60 mt-20 mx-auto overflow-hidden md:h-96 md:w-96 pl-15">
+            <div className="shadow-xl relative bg-gradient-to-t from-red to-orange rounded-full w-60 h-60 mt-20 mx-auto overflow-hidden md:h-96 md:w-96 pl-15">
               <Image src={diego} width="auto" height="auto" alt="Diego Blanco" />
             </div>
           </div>
@@ -85,17 +85,17 @@ export default function Home() {
           <div>
             <h3 className="dark:text-white text-4xl py-1">Projects</h3>
             <p className="text-lg py-2 leading-8 text-midWhite  dark:text-gray-400">
-              Here, you can see my projects. Some of them were developed in a professional environment, and due to protected rights, I am unable to showcase or link to their repositories. Nevertheless, I can explain how I developed them and the technologies I used. However, others were developed by me and are completely open-source and public            </p>
+              Here, you can see my projects. Some of them were developed in a professional environment, and due to protected rights, I am unable to showcase or link to their repositories. Nevertheless, I can explain how I developed them and the technologies I used. However, others were developed by me and are completely open-source and public.</p>
 
           </div>
-          <div className="lg:flex gap-10">
+          <div className="lg:flex gap-10 ">
             <div >
               <div className="dark:bg-black text-center shadow-lg p-10 rounded-xl my-10 transition-transform">
                 <h3 className="dark:text-white text-2xl font-medium pt-8 pb-2">
                   React ToDo App
                 </h3>
                 <p className="text-midWhite py-2">
-                  A simply TODO app developed just for learning React Js basics and use an external API.
+                  The primary objective of developing this TODO app is to gain a better understanding of React Js fundamentals and to incorporate an external API.
                 </p>
                 <h4 className=" py-3 text-red text-lg">Technologies I used</h4>
                 <p className="dark:text-midWhite text-gray-800 py-1">React</p>
@@ -111,7 +111,7 @@ export default function Home() {
                   Kitten Facts
                 </h3>
                 <p className="text-midWhite py-2">
-                  A simply TODO app developed just for learning React Js basics and use an external API.
+                  This is an app designed for concatenating multiple asynchronous requests. It displays random facts and searches for a kitten picture based on the first three words of the given fact.
                 </p>
                 <h4 className=" py-3 text-red text-lg">Technologies I used</h4>
                 <p className="dark:text-midWhite text-gray-800 py-1">React</p>
@@ -121,12 +121,12 @@ export default function Home() {
               </div>
             </div>
             <div >
-              <div className="dark:bg-black text-center shadow-lg p-10 rounded-xl my-10 transition-transform">
+              <div className="dark:bg-black text-center shadow-lg p-10 rounded-xl my-10 transition-transform max-w-2xl ">
                 <h3 className="dark:text-white text-2xl font-medium pt-8 pb-2">
                   API REST Login Active Directory
                 </h3>
-                <p className="text-midWhite py-2">
-                  A simply TODO app developed just for learning React Js basics and use an external API.
+                <p className="text-midWhite py-2 ">
+                Here, I identified the need to simplify the login process in my company. We have multiple projects with different login methods and redundant databases. Therefore, I decided to develop an API that could directly communicate with my company's Active Directory and integrate a simple REST API login with all our projects. This way, all employees could access all internal projects and tools using a single account.
                 </p>
                 <h4 className=" py-3 text-red text-lg">Technologies I used</h4>
                 <p className="dark:text-midWhite text-gray-800 py-1">Node JS</p>
