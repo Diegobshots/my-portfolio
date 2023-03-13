@@ -2,7 +2,6 @@ import Head from "next/head"
 import { BsCloudMoon } from "react-icons/bs"
 import { BsSun } from "react-icons/bs"
 import {
-  AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillGithub,
 } from "react-icons/ai"
@@ -36,7 +35,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="dark:bg-midBlack bg-white px-10 md:px-20 lg:px-60">
+      <main className="dark:bg-midBlack bg-white px-10 md:px-20 lg:px-60 h-full">
         <section className="min-h-screen">
           <nav className="shadow-lg backdrop-blur-sm lg:px-40  flex justify-between py-19 bg-white/60 dark:bg-midBlack/30 py-7 px-7 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 ">
             <h1 className="dark:text-white text-midBlack text-xl ">diego-blan.co</h1>
@@ -70,7 +69,6 @@ export default function Home() {
                 frameworks for building web apps.
               </p>
               <div className="text-5xl flex justify-center gap-16 py-3 text-midWhite">
-                <AiFillTwitterCircle className="hover:text-red cursor-pointer" />
                 <Link target='_blank' href='https://www.linkedin.com/in/diegoblancolopez/'><AiFillLinkedin className="hover:text-red cursor-pointer" /></Link>
                 <Link target='_blank' href='https://www.github.com/diegobshots/'><AiFillGithub className="hover:text-red cursor-pointer" /></Link>
               </div>
@@ -98,10 +96,8 @@ export default function Home() {
                   A simply TODO app developed just for learning React Js basics and use an external API.
                 </p>
                 <h4 className=" py-3 text-red text-lg">Technologies I used</h4>
-                <p className="dark:text-midWhite text-gray-800 py-1">Photoshop</p>
-                <p className="dark:text-midWhite text-gray-800 py-1">Ilustrator</p>
-                <p className="dark:text-midWhite text-gray-800 py-1">Figma</p>
-                <p className="dark:text-midWhite text-gray-800 py-1">Photoshop</p>
+                <p className="dark:text-midWhite text-gray-800 py-1">React</p>
+                <p className="dark:text-midWhite text-gray-800 py-1">Material UI</p>
                 <Link href='https://delightful-druid-1164d7.netlify.app/' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 w-full mb-2 flex justify-center items-center mt-4">View deploy<SiNetlify className="ml-2"/></button></Link>
                 <Link href='https://github.com/Diegobshots/todo-app/tree/master' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 flex justify-center items-center w-full">View repo<AiFillGithub className="ml-2"/></button></Link>
                 
@@ -116,10 +112,7 @@ export default function Home() {
                   A simply TODO app developed just for learning React Js basics and use an external API.
                 </p>
                 <h4 className=" py-3 text-red text-lg">Technologies I used</h4>
-                <p className="dark:text-midWhite text-gray-800 py-1">Photoshop</p>
-                <p className="dark:text-midWhite text-gray-800 py-1">Ilustrator</p>
-                <p className="dark:text-midWhite text-gray-800 py-1">Figma</p>
-                <p className="dark:text-midWhite text-gray-800 py-1">Photoshop</p>
+                <p className="dark:text-midWhite text-gray-800 py-1">React</p>
                 <Link href='https://delightful-druid-1164d7.netlify.app/' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 w-full mb-2 flex justify-center items-center mt-4">View deploy<SiNetlify className="ml-2"/></button></Link>
                 <Link href='https://github.com/Diegobshots/todo-app/tree/master' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 flex justify-center items-center w-full">View repo<AiFillGithub className="ml-2"/></button></Link>
                 
@@ -134,52 +127,35 @@ export default function Home() {
                   A simply TODO app developed just for learning React Js basics and use an external API.
                 </p>
                 <h4 className=" py-3 text-red text-lg">Technologies I used</h4>
-                <p className="dark:text-midWhite text-gray-800 py-1">Photoshop</p>
-                <p className="dark:text-midWhite text-gray-800 py-1">Ilustrator</p>
-                <p className="dark:text-midWhite text-gray-800 py-1">Figma</p>
-                <p className="dark:text-midWhite text-gray-800 py-1">Photoshop</p>
-                <Link href='https://delightful-druid-1164d7.netlify.app/' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 w-full mb-2 flex justify-center items-center mt-4">View deploy<SiNetlify className="ml-2"/></button></Link>
-                <Link href='https://github.com/Diegobshots/todo-app/tree/master' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 flex justify-center items-center w-full">View repo<AiFillGithub className="ml-2"/></button></Link>
+                <p className="dark:text-midWhite text-gray-800 py-1">Node JS</p>
+                <p className="dark:text-midWhite text-gray-800 py-1">Express</p>
+                <p className="dark:text-midWhite text-gray-800 py-1">JWT</p>
+                <p className="dark:text-midWhite text-gray-800 py-1">ldap-authentication package</p>
+                
+              </div>
+            </div>
+            <div >
+              <div className="dark:bg-black text-center shadow-lg p-10 rounded-xl my-10 transition-transform ">
+                <h3 className="dark:text-white text-2xl font-medium pt-8 pb-2">
+                  React Shop
+                </h3>
+                <p className="text-midWhite py-2">
+                  In this project I learned how to use context, reducers and custom hooks to handle the global state of the app.
+                </p>
+                <h4 className=" py-3 text-red text-lg">Technologies I used</h4>
+                <p className="dark:text-midWhite text-gray-800 py-1">React</p>
+                <p className="dark:text-midWhite text-gray-800 py-1">Tailwindcss</p>
+                <p className="dark:text-midWhite text-gray-800 py-1">Vite</p>
+              
+                <Link href='https://unique-begonia-553e1e.netlify.app/' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 w-full mb-2 flex justify-center items-center mt-4">View deploy<SiNetlify className="ml-2"/></button></Link>
+                <Link href='https://github.com/Diegobshots/react-shop' target='_blank'><button className="dark:bg-red bg-black text-white rounded-lg py-3 px-5 flex justify-center items-center w-full">View repo<AiFillGithub className="ml-2"/></button></Link>
                 
               </div>
             </div>
           </div>
 
         </section>
-        <section>
-          <div>
-            <h3 className="dark:text-white text-4xl py-1">About me</h3>
-            <p className="text-lg py-2 leading-8 text-midWhite  dark:text-gray-400">
-              Here, you can see my projects. Some of them were developed in a professional environment, and due to protected rights, I am unable to showcase or link to their repositories. Nevertheless, I can explain how I developed them and the technologies I used. However, others were developed by me and are completely open-source and public            </p>
-            
-            <p className="text-md py-2 leading-8 text-gray-800">
-              Ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              containing Lorem Ipsum passages, and more recently with desktop
-            </p>
-          </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
-              <Image src={web1} alt="design-logo" className="rounded-lg object-cover" width={'100%'} height={'100%;'} layout='responsive' />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={web2} alt="design-logo" className="rounded-lg object-cover" width={'100%'} height={'100%;'} layout='responsive' />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={web3} alt="design-logo" className="rounded-lg object-cover" width={'100%'} height={'100%;'} layout='responsive' />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={web4} alt="design-logo" className="rounded-lg object-cover" width={'100%'} height={'100%;'} layout='responsive' />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={web5} alt="design-logo" className="rounded-lg object-cover" width={'100%'} height={'100%;'} layout='responsive' />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image src={web6} alt="design-logo" className="rounded-lg object-cover" width={'100%'} height={'100%;'} layout='responsive' />
-            </div>
-
-          </div>
-        </section>
+        
       </main>
     </div>
   )
