@@ -106,7 +106,7 @@ export default function Home() {
               </div>
             </div>
             <div >
-              <div className="dark:bg-black text-center shadow-lg p-10 rounded-xl my-10 transition-transform">
+              <div className="dark:bg-black text-center shadow-lg p-10 rounded-xl my-10 transition-transform max-w-3xl">
                 <h3 className="dark:text-white text-2xl font-medium pt-8 pb-2">
                   Kitten Facts
                 </h3>
@@ -121,12 +121,12 @@ export default function Home() {
               </div>
             </div>
             <div >
-              <div className="dark:bg-black text-center shadow-lg p-10 rounded-xl my-10 transition-transform max-w-2xl ">
+              <div className="dark:bg-black text-center shadow-lg p-10 rounded-xl my-10 transition-transform max-w-5xl ">
                 <h3 className="dark:text-white text-2xl font-medium pt-8 pb-2">
                   API REST Login Active Directory
                 </h3>
                 <p className="text-midWhite py-2 ">
-                Here, I identified the need to simplify the login process in my company. We have multiple projects with different login methods and redundant databases. Therefore, I decided to develop an API that could directly communicate with my company's Active Directory and integrate a simple REST API login with all our projects. This way, all employees could access all internal projects and tools using a single account.
+                Here, I identified the need to simplify the login process in my company. We have multiple projects with different login methods and redundant databases. Therefore, I decided to develop an API that could directly communicate with my company&apos;s Active Directory and integrate a simple REST API login with all our projects. This way, all employees could access all internal projects and tools using a single account.
                 </p>
                 <h4 className=" py-3 text-red text-lg">Technologies I used</h4>
                 <p className="dark:text-midWhite text-gray-800 py-1">Node JS</p>
